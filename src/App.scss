@@ -1,0 +1,83 @@
+html,
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  background-color: rgb(255, 255, 255);
+  background-size: 109% 170%;
+  background-position: 45% 60%;
+  background-image: url(./layout/bg5.png);
+  background-repeat: no-repeat;
+}
+
+nav {
+  height: 100px;
+  width: 100%;
+  background-color: #a7cfe8ff;
+}
+ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 30px;
+  text-transform: uppercase;
+  font-size: 20px;
+  line-height: 100px;
+  list-style: none;
+  font-weight: 700;
+  color: white;
+  font-family: "Press Start 2P", cursive;
+}
+li:hover {
+  color: rgb(64, 64, 64);
+  cursor: pointer;
+}
+li:nth-child(1):hover {
+  letter-spacing: 3px;
+  transition: 1s;
+}
+li:nth-child(2):hover {
+  letter-spacing: 3px;
+  transition: 1s;
+}
+li:nth-child(3):hover {
+  letter-spacing: 3px;
+  transition: 1s;
+}
+li:nth-child(4):hover {
+  letter-spacing: 3px;
+  transition: 1s;
+}
+.App {
+  width: 100%;
+}
+
+.message {
+  width: 20%;
+  position: absolute;
+  top: 32%;
+  right: 39%;
+  font-size: 174px;
+  color: orange;
+  cursor: pointer;
+}
+
+@keyframes moveUpDown {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(3px);
+  }
+  100% {
+    transform: translateY(-3px);
+  }
+}
+
+.message-active {
+  animation: moveUpDown 0.4s linear infinite;
+}
+.message-opened {
+  transition: 1s;
+  font-size: 0px;
+}
