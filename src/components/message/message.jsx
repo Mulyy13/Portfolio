@@ -6,8 +6,8 @@ const Message = () => {
   const [text, setText] = useState("");
   let num = 0;
   const originalText =
-    // "Wspaniale, że mnie odwiedziłeś/aś! Jestem początkującym frontend developerem, który specjalizuje się w react.js, mam nadzieję, że znajdziesz coś co Cię zaciekawi";
-    "Maasz co?";
+    "Wspaniale, że mnie odwiedziłeś/aś! Jestem początkującym frontend developerem, który specjalizuje się w react.js, mam nadzieję, że znajdziesz coś co Cię zaciekawi";
+  // "Maasz co?";
 
   useEffect(() => {
     const typing = setInterval(() => {

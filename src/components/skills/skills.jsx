@@ -8,11 +8,12 @@ import git from "../../images/git.svg";
 import js from "../../images/js.svg";
 import sass from "../../images/sass.svg";
 import vsc from "../../images/vsc.svg";
-// import s from "../../images/wrr.svg";
+import rwd from "../../images/rwd.svg";
 const Skills = () => {
   return (
     <section>
       <div className="skills__container">
+        <h4 className="skills__title">Moje umiejętności</h4>
         <div className="skills__items">
           <div className="skills__item skills__item-html">
             <div className="skills__item-image">
@@ -70,7 +71,7 @@ const Skills = () => {
           </div>{" "}
           <div className="skills__item skills__item-rwd">
             <div className="skills__item-image">
-              <img src={js} alt="html" />
+              <img src={rwd} alt="html" />
             </div>
             <div className="skills__item-name ">RWD</div>
           </div>

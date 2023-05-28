@@ -9,9 +9,7 @@ const About = () => {
         nauczyłem się sporo technologii, o których więcej informacji zamieściłem
         w sekcji <a href="s">skills</a>. Interesuję się elektroniką, psychologią
         i nowymi technologiami. Na chwilę obecną szukam ofert pracy żeby móc
-        poszerzać swoje umiejętności jeszcze bardziej efektywnie. no i
-        oczywiscie jebac karasia murem za czeskiem janusz silacze cie dojada
-        zadymy u macha niejedna wspolnie wyjebana flacha januszzzzjeb123
+        poszerzać swoje umiejętności jeszcze bardziej efektywnie.
       </p>
     </section>
   );

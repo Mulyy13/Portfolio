@@ -1,16 +1,29 @@
+@import "../../variables/variables.scss";
 .skills__container {
   position: absolute;
   width: 40%;
-  height: 40%;
+  height: 50%;
   top: 30%;
-  left: 33%;
+  left: 31%;
+  margin: 0 auto;
+  .skills__title {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 40px;
+    color: $fontColorPrimary;
+    font-family: $fontC;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    font-weight: 300;
+  }
 
   .skills__items {
+    padding-top: 20px;
     display: flex;
     flex-wrap: wrap;
-    justify-content: flex-start;
+    justify-content: center;
     gap: 3%;
-
+    margin: 0 auto;
     .skills__item {
       width: 100px;
       height: 100px;
@@ -31,26 +44,42 @@
         border: 1.5px solid #e7a42b;
       }
       &-react {
-        background-color: blue;
+        background-color: #8bb7f0;
+        border: 1.5px solid #5078b7;
       }
       &-redux {
-        background-color: blue;
+        background-color: #7e57c2;
+        border: 1.5px solid #5f4094;
       }
       &-eslint {
-        background-color: blue;
+        background-color: #7986cb;
+        border: 1.5px solid #3949ab;
       }
       &-git {
-        background-color: blue;
+        background-color: #f4511e;
+        border: 1.5px solid #be350c;
       }
       &-sass {
         background-color: #f06292;
         border: 1.5px solid #ec6494;
       }
       &-vsc {
-        background-color: blue;
+        background-color: #29b6f6;
+        border: 1.5px solid #0288d1;
       }
       &-rwd {
-        background-color: blue;
+        background-color: #1ed7eb;
+        border: 1.5px solid #1e8ceb;
+
+        .skills__item-image {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          img {
+            width: 90%;
+            height: 90%;
+          }
+        }
       }
       &-image {
         width: 100%;
