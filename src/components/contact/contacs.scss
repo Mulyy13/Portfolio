@@ -1,19 +1,92 @@
-// .skills {
-//   position: absolute;
-//   left: 35%;
-//   top: 40%;
-//   &__item {
-//     width: 100px;
-//     height: 100px;
-//     background-color: gray;
-//     border-top-left-radius: 10px;
-//     border-top-right-radius: 10px;
-//     &-image {
-//       width: 100%;
-//       height: 100%;
-//     }
-//     .text {
-//       text-align: center;
-//     }
-//   }
-// }
+@import "../../variables/variables.scss";
+.contact {
+  position: absolute;
+  top: 23.5%;
+  left: 27.3%;
+  width: 47.6%;
+  height: 64.2%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: rgb(0, 0, 0);
+  background: linear-gradient(
+    0deg,
+    rgba(0, 0, 0, 1) 0%,
+    rgba(5, 83, 121, 1) 18%,
+    rgba(255, 255, 255, 1) 100%
+  );
+  border-top-left-radius: 25px;
+  border-top-right-radius: 25px;
+  h6 {
+    color: rgb(14, 3, 75);
+    padding: 0px 0 50px;
+    font-size: 40px;
+    font-family: $fontB;
+  }
+
+  &__wrapper {
+    display: grid;
+    grid-template-columns: repeat(2, 100px);
+    grid-template-rows: repeat(2, 100px);
+    gap: 20px;
+
+    .contact__item {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background-color: rgb(175, 209, 224);
+      border-radius: 15px;
+    }
+
+    .contact__email {
+      width: 100px;
+      font-size: $iconsSize;
+      transition: 1s;
+
+      &:hover {
+        width: 200px;
+
+        font-size: 16px;
+        transition: width 1.5s, font-size 0s 0.9s;
+        font-family: $fontD;
+      }
+    }
+    .contact__git {
+      color: red;
+      font-size: $iconsSize;
+
+      &-icon {
+        transform: scale(1);
+        transition: 1s;
+        &:hover {
+          transform: scale(1.6);
+          transition: 1s;
+        }
+      }
+    }
+    .contact__linkedIn {
+      color: rgb(70, 95, 236);
+      font-size: $iconsSize;
+      &-icon {
+        transform: scale(1);
+        transition: 1s;
+        &:hover {
+          transform: scale(1.6);
+          transition: 1s;
+        }
+      }
+    }
+    .contact__phone {
+      width: 100px;
+      font-size: $iconsSize;
+      transition: 1s;
+      &:hover {
+        width: 200px;
+        font-size: 16px;
+        transition: width 1.5s, font-size 0s 0.9s;
+        font-family: $fontD;
+      }
+    }
+  }
+}

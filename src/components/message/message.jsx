@@ -1,13 +1,14 @@
 import React, { useState, useEffect } from "react";
 import "./message.scss";
 import { FaSmileBeam } from "react-icons/fa";
-
+import { about } from "../../features/handleSection";
+import { useDispatch } from "react-redux";
 const Message = () => {
   const [text, setText] = useState("");
+  const dispatch = useDispatch();
   let num = 0;
   const originalText =
-    "Wspaniale, że mnie odwiedziłeś/aś! Jestem początkującym frontend developerem, który specjalizuje się w react.js, mam nadzieję, że znajdziesz coś co Cię zaciekawi";
-  // "Maasz co?";
+    "Wspaniale, że mnie odwiedziłeś/aś! Jestem początkującym frontend developerem, który specjalizuje się w react.js, mam nadzieję, że znajdziesz coś co Cię zaciekawi.";
 
   useEffect(() => {
     const typing = setInterval(() => {
@@ -29,7 +30,7 @@ const Message = () => {
         {text}
         {num === originalText.length - 1 ? <FaSmileBeam /> : null}
       </p>
-      <span>przejdź dalej</span>
+      <span onClick={() => dispatch(about())}>przejdź dalej</span>
     </div>
   );
 };

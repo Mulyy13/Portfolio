@@ -9,8 +9,10 @@ import Git from "./git/git";
 import Sass from "./sass/sass";
 import Rwd from "./rwd/rwd";
 import Vsc from "./vsc/vsc";
-
-const Skills = ({ showParagraph }) => {
+import { useDispatch } from "react-redux";
+import { projects } from "../../features/handleSection";
+const Skills = () => {
+  const dispatch = useDispatch();
   return (
     <section>
       <div className="skills__container">
@@ -27,6 +29,10 @@ const Skills = ({ showParagraph }) => {
           <Vsc />
           <Rwd />
         </div>
+        <p className="skills__projects-navigator">
+          Sprawdź <span onClick={() => dispatch(projects())}>projekty</span> w
+          których je wykorzystywałem
+        </p>
       </div>
     </section>
   );

@@ -38,12 +38,20 @@ const Projects = () => {
                   />
                   <div className="projects__details">
                     <h4 className="projects__details-title">
-                      <a href={item.urlGit}>
+                      <a
+                        href={item.urlGit}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
                         {" "}
                         <BsGithub className="git" />
                       </a>
                       {item.name}
-                      <a href={item.urlApp}>
+                      <a
+                        href={item.urlApp}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
                         <BsFillPlayCircleFill className="play" />
                       </a>
                     </h4>

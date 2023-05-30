@@ -8,12 +8,12 @@ const Navbar = () => {
       <ul className="navbar__list">
         <li className="navbar__list-item" onClick={() => dispatch(about())}>
           About
+        </li>{" "}
+        <li className="navbar__list-item" onClick={() => dispatch(skills())}>
+          Skills
         </li>
         <li className="navbar__list-item" onClick={() => dispatch(projects())}>
           Projects
-        </li>
-        <li className="navbar__list-item" onClick={() => dispatch(skills())}>
-          Skills
         </li>
         <li className="navbar__list-item" onClick={() => dispatch(contact())}>
           contact

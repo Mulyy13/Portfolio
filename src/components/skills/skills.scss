@@ -1,20 +1,27 @@
 @import "../../variables/variables.scss";
 .skills__container {
   position: absolute;
-  width: 40%;
-  height: 50%;
-  top: 30%;
-  left: 31%;
-  margin: 0 auto;
+  top: 23.5%;
+  left: 27.3%;
+  width: 47.6%;
+  height: 64.2%;
+  background: rgb(0, 0, 0);
+  background: linear-gradient(
+    0deg,
+    rgba(0, 0, 0, 1) 0%,
+    rgba(5, 83, 121, 1) 18%,
+    rgba(255, 255, 255, 1) 100%
+  );
+  border-top-left-radius: 25px;
+  border-top-right-radius: 25px;
   .skills__title {
     text-align: center;
-    margin-bottom: 20px;
+    color: rgb(14, 3, 75);
+    padding: 40px 0 20px;
     font-size: 40px;
-    color: $fontColorPrimary;
-    font-family: $fontC;
+
+    font-family: $fontB;
     text-transform: uppercase;
-    letter-spacing: 5px;
-    font-weight: 300;
   }
 
   .skills__items {
@@ -97,6 +104,17 @@
       &-name {
         text-align: center;
       }
+    }
+  }
+  .skills__projects-navigator {
+    text-align: center;
+    font-family: $fontD;
+    font-size: 20px;
+    color: white;
+    span {
+      color: rgb(127, 230, 127);
+      text-decoration: underline;
+      cursor: pointer;
     }
   }
 }
