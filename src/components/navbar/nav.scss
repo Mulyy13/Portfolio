@@ -1,0 +1,24 @@
+.navbar {
+  height: 100px;
+  width: 100%;
+  background-color: #a7cfe8ff;
+  &__list {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 30px;
+    text-transform: uppercase;
+    font-size: 20px;
+    line-height: 100px;
+    list-style: none;
+    font-weight: 700;
+    color: white;
+    font-family: "Press Start 2P", cursive;
+    &-item:hover {
+      color: rgb(64, 64, 64);
+      cursor: pointer;
+      letter-spacing: 3px;
+      transition: 1s;
+    }
+  }
+}

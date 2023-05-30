@@ -1,0 +1,105 @@
+@import "../../variables/variables.scss";
+
+.projects {
+  position: absolute;
+  top: 23.5%;
+  left: 27.3%;
+  width: 47.6%;
+  height: 64.2%;
+  display: flex;
+  background: rgb(0, 0, 0);
+  background: linear-gradient(
+    0deg,
+    rgba(0, 0, 0, 1) 0%,
+    rgba(5, 83, 121, 1) 18%,
+    rgba(255, 255, 255, 1) 100%
+  );
+  border-top-left-radius: 25px;
+  border-top-right-radius: 25px;
+
+  &__arrow {
+    margin: auto 0;
+    color: white;
+    font-size: 44px;
+    cursor: pointer;
+  }
+  &__container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+
+    .projects__image {
+      width: 100%;
+      height: 55%;
+      min-height: 55%;
+      background-size: 100%100%;
+      background-position: 45% 55%;
+      background-repeat: no-repeat;
+      margin: 0 auto;
+      border-radius: 25px;
+      border: 3px solid rgb(52, 82, 165);
+    }
+    .projects__details-wrapper {
+      width: 100%;
+      display: flex;
+      margin: auto 0;
+
+      justify-content: center;
+      .projects__details {
+        width: 90%;
+
+        border-radius: 15px;
+        &-title {
+          color: white;
+          text-align: center;
+          font-size: 36px;
+          font-family: $fontB;
+          width: 60%;
+          display: flex;
+          justify-content: space-between;
+          margin: 0 auto;
+          padding-top: 1%;
+          a:nth-child(1) {
+            color: rgb(206, 88, 46);
+          }
+          a:nth-child(2) {
+            color: rgb(32, 163, 6);
+          }
+          .git:hover {
+            color: rgb(253, 77, 13);
+            cursor: pointer;
+          }
+          .play:hover {
+            color: rgb(1, 223, 1);
+            cursor: pointer;
+          }
+        }
+        &-desc {
+          color: white;
+          text-align: center;
+          font-size: 16px;
+          width: 80%;
+          height: 50px;
+          margin: 0 auto;
+          font-family: $fontD;
+          font-weight: 500;
+        }
+        &-tech {
+          margin-top: 4%;
+          list-style: none;
+          display: flex;
+          justify-content: center;
+          // background-color: red;
+          height: 50px;
+          overflow: hidden;
+          gap: 3%;
+          padding: 0 5%;
+
+          li {
+            text-align: center;
+          }
+        }
+      }
+    }
+  }
+}
