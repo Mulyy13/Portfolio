@@ -1,12 +1,12 @@
-import vsc from "../../../images/vsc.svg";
+import vsc from "../../../../assets/svgs/vsc.svg";
+
 const Vsc = () => {
-  let showParagraph = true;
   return (
     <div className="skills__item skills__item-vsc ">
       <div className="skills__item-image">
         <img src={vsc} alt="vsc" />
       </div>
-      {showParagraph && <p className="skills__item-name">Vsc</p>}
+      <p className="skills__item-name">Vsc</p>
     </div>
   );
 };

@@ -1,4 +1,5 @@
-import eslint from "../../../images/eslint.svg";
+import eslint from "../../../../assets/svgs/eslint.svg";
+
 const Eslint = () => {
   return (
     <div className="skills__item skills__item-eslint ">

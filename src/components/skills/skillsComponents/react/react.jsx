@@ -1,4 +1,5 @@
-import react from ".././../../images/react.svg";
+import react from "../../../../assets/svgs/react.svg";
+
 const React = () => {
   return (
     <div className="skills__item skills__item-react ">

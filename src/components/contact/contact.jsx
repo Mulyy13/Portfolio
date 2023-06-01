@@ -2,6 +2,7 @@ import { useState } from "react";
 import "./contacs.scss";
 import { BsGithub, BsTelephoneFill, BsLinkedin } from "react-icons/bs";
 import { GrMail } from "react-icons/gr";
+
 const Contact = () => {
   const [telephoneNumber, setTelephoneNumber] = useState(<BsTelephoneFill />);
   const [email, setEmail] = useState(<GrMail />);

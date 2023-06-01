@@ -1,23 +1,24 @@
-import { useState } from "react";
+import React, { useState } from "react";
 import "./App.scss";
-import Navbar from "./components/navbar/nav";
 import { GiLetterBomb } from "react-icons/gi";
 import Message from "./components/message/message";
-import { useSelector } from "react-redux";
+
 import About from "./components/about/about";
 import Skills from "./components/skills/skills";
 import Projects from "./components/projects/projects";
 import Contact from "./components/contact/contact";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import Layout from "./layout/layout";
+
 function App() {
   const [isMessageOpened, setIsMessageOpened] = useState(false);
-  const display = useSelector((state) => state.handleSection.value);
-  console.log(display);
+
   return (
-    <>
-      <Navbar />
-      <div className="App">
-        {isMessageOpened && display === "" ? <Message /> : null}
-        {display === "" ? (
+    <Router>
+      <Layout>
+        <div className="App">
+          {isMessageOpened ? <Message /> : null}
+
           <GiLetterBomb
             className={
               isMessageOpened
@@ -28,13 +29,16 @@ function App() {
               setIsMessageOpened(true);
             }}
           />
-        ) : null}
-        {display === "about" ? <About /> : null}
-        {display === "projects" ? <Projects /> : null}
-        {display === "skills" ? <Skills /> : null}
-        {display === "contact" ? <Contact /> : null}
-      </div>
-    </>
+
+          <Routes>
+            <Route path="/about" element={<About />}></Route>
+            <Route path="/Projects" element={<Projects />}></Route>
+            <Route path="/Skills" element={<Skills />}></Route>
+            <Route path="/Contact" element={<Contact />}></Route>
+          </Routes>
+        </div>{" "}
+      </Layout>
+    </Router>
   );
 }
 

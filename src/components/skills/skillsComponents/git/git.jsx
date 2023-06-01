@@ -1,5 +1,5 @@
-import git from "../../../images/git.svg";
-import "../../projects/projects.scss";
+import git from "../../../../assets/svgs/git.svg";
+
 const Git = () => {
   return (
     <div className="skills__item skills__item-git ">

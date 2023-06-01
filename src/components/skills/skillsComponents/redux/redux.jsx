@@ -1,4 +1,5 @@
-import redux from "../../../images/redux.svg";
+import redux from "../../../../assets/svgs/redux.svg";
+
 const Redux = () => {
   return (
     <div className="skills__item skills__item-redux ">

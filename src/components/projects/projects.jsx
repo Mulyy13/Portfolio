@@ -1,6 +1,6 @@
 import "./projects.scss";
 import "../skills/skills.scss";
-import { myProjects } from "./data/data";
+import { myProjects } from "./projects.data";
 import { useState } from "react";
 import {
   TbArrowBigRightLinesFilled,

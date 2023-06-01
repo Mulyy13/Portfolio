@@ -1,4 +1,5 @@
-import sass from "../../../images/sass.svg";
+import sass from "../../../../assets/svgs/redux.svg";
+
 const Sass = () => {
   return (
     <div className="skills__item skills__item-sass ">

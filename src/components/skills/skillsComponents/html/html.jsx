@@ -1,4 +1,5 @@
-import html from "../../../images/html.svg";
+import html from "../../../../assets/svgs/html.svg";
+
 const Html = () => {
   return (
     <div className="skills__item skills__item-html ">

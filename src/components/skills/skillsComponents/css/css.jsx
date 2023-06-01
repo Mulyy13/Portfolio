@@ -1,4 +1,4 @@
-import css from "../../../images/css.svg";
+import css from "../../../../assets/svgs/css.svg";
 
 const Css = () => {
   return (

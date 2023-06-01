@@ -1,18 +1,17 @@
 import "../skills/skills.scss";
-import Html from "./html/html";
-import Css from "./css/css";
-import Js from "./js/js";
-import React from "./react/react";
-import Redux from "./redux/redux";
-import Eslint from "./eslint/eslint";
-import Git from "./git/git";
-import Sass from "./sass/sass";
-import Rwd from "./rwd/rwd";
-import Vsc from "./vsc/vsc";
-import { useDispatch } from "react-redux";
-import { projects } from "../../features/handleSection";
+import Html from "./skillsComponents/html/html";
+import Css from "./skillsComponents/css/css";
+import Js from "./skillsComponents/js/js";
+import React from "./skillsComponents/react/react";
+import Redux from "./skillsComponents/redux/redux";
+import Eslint from "./skillsComponents/eslint/eslint";
+import Git from "./skillsComponents/git/git";
+import Sass from "./skillsComponents/sass/sass";
+import Rwd from "./skillsComponents/rwd/rwd";
+import Vsc from "./skillsComponents/vsc/vsc";
+// import { projects } from "../../features/handleSection";
+
 const Skills = () => {
-  const dispatch = useDispatch();
   return (
     <section>
       <div className="skills__container">
@@ -30,8 +29,7 @@ const Skills = () => {
           <Rwd />
         </div>
         <p className="skills__projects-navigator">
-          Sprawdź <span onClick={() => dispatch(projects())}>projekty</span> w
-          których je wykorzystywałem
+          Sprawdź <span>projekty</span> w których je wykorzystywałem
         </p>
       </div>
     </section>

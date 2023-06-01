@@ -1,4 +1,5 @@
-import js from "../../../images/js.svg";
+import js from "../../../../assets/svgs/js.svg";
+
 const Js = () => {
   return (
     <div className="skills__item skills__item-js ">

@@ -1,4 +1,4 @@
-@import "../../variables/variables.scss";
+@import "../../fonts/fonts.scss";
 .about {
   position: absolute;
   width: 40%;
@@ -7,7 +7,7 @@
   &__title {
     margin-left: 20px;
     padding: 30px 0 10px;
-    color: rgb(37, 95, 3);
+    color: rgb(3, 170, 3);
     font-size: 54px;
     font-family: $fontB;
     border-bottom: 4px solid #a4cbe7;
@@ -16,18 +16,115 @@
   &__specification {
     text-align: end;
     font-size: 38px;
+    color: rgb(14, 3, 75);
     font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
     font-style: italic;
   }
   &__description {
     padding-top: 20px;
-    font-size: 1.2em;
+    font-size: 19px;
     font-weight: 600;
     font-family: $fontE;
     span {
       color: green;
       text-decoration: underline;
       cursor: pointer;
+    }
+  }
+}
+@media (max-width: 1500px) {
+  .about {
+    &__title {
+      width: 52%;
+    }
+  }
+}
+@media (max-width: 1180px) {
+  .about {
+    &__title {
+      font-size: calc(54px * 0.8);
+    }
+    &__specification {
+      font-size: calc(38px * 0.8);
+    }
+    &__description {
+      font-size: calc(19px * 0.9);
+    }
+  }
+}
+
+@media (max-width: 922px) {
+  .about {
+    &__title {
+      font-size: calc(54px * 0.6);
+    }
+    &__specification {
+      font-size: calc(38px * 0.6);
+    }
+    &__description {
+      font-size: calc(19px * 0.7);
+    }
+  }
+}
+@media (max-width: 720px) {
+  .about {
+    position: absolute;
+    width: 70%;
+    top: 25%;
+    left: 10%;
+    &__title {
+      font-size: calc(54px * 0.8);
+    }
+    &__specification {
+      font-size: calc(38px * 0.8);
+    }
+    &__description {
+      font-size: calc(19px * 0.7);
+    }
+  }
+}
+
+@media (max-width: 580px) {
+  .about {
+    &__title {
+      font-size: calc(54px * 0.7);
+    }
+    &__specification {
+      font-size: calc(38px * 0.7);
+    }
+    &__description {
+      font-size: calc(19px * 0.6);
+    }
+  }
+}
+
+@media (max-width: 462px) {
+  .about {
+    &__title {
+      font-size: calc(54px * 0.6);
+    }
+    &__specification {
+      font-size: calc(38px * 0.6);
+    }
+    &__description {
+      font-size: calc(19px * 0.5);
+    }
+  }
+}
+@media (max-width: 375px) {
+  .about {
+    &__title {
+      width: 80%;
+      font-size: calc(54px * 0.6);
+      margin-bottom: 20px;
+    }
+    &__specification {
+      font-size: calc(38px * 0.6);
+      font-weight: 900;
+    }
+    &__description {
+      font-size: calc(19px * 0.6);
+      margin: 0 auto;
     }
   }
 }

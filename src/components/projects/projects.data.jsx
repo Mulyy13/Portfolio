@@ -1,13 +1,12 @@
-import Html from "../../skills/html/html";
-import Css from "../../skills/css/css";
-import Js from "../../skills/js/js";
-import React from "../../skills/react/react";
-import Redux from "../../skills/redux/redux";
-import Eslint from "../../skills/eslint/eslint";
-import Git from "../../skills/git/git";
-import Sass from "../../skills/sass/sass";
-import Vsc from "../../skills/vsc/vsc";
-import Rwd from "../../skills/rwd/rwd";
+import Html from "../skills/skillsComponents/html/html";
+import Css from "../skills/skillsComponents/css/css";
+import Js from "../skills/skillsComponents/js/js";
+import React from "../skills/skillsComponents/react/react";
+import Redux from "../skills/skillsComponents/redux/redux";
+import Eslint from "../skills/skillsComponents/eslint/eslint";
+import Sass from "../skills/skillsComponents/sass/sass";
+import Rwd from "../skills/skillsComponents/rwd/rwd";
+
 export const myProjects = [
   {
     id: 0,

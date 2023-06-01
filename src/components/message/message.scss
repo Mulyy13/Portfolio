@@ -1,27 +1,32 @@
-@import "../../variables/variables.scss";
+@import "../../fonts/fonts.scss";
 .container {
   h1 {
     position: absolute;
-    top: 33%;
-    left: 35%;
+    top: 30%;
+    left: 45.5%;
     color: rgb(3, 170, 3);
-    font-size: 46px;
+    font-size: 76px;
+    font-family: $fontB;
   }
   p {
-    font-family: "Arimo", sans-serif;
+    font-family: $fontD;
     position: absolute;
     top: 50%;
-    left: 40%;
+    left: 35%;
     font-size: 20px;
-    width: 20%;
+    width: 24%;
   }
   span {
     position: absolute;
     top: 75%;
     right: 33%;
+    padding: 3px 10px;
     cursor: pointer;
+    font-family: $fontB;
     &:hover {
-      color: rgb(3, 170, 3);
+      background-color: rgb(79, 201, 79);
+      color: white;
+      border-radius: 25px;
     }
   }
 }

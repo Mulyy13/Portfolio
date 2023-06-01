@@ -1,4 +1,5 @@
-import rwd from "../../../images/rwd.svg";
+import rwd from "../../../../assets/svgs/rwd.svg";
+
 import "./rwd.scss";
 const Rwd = () => {
   return (
