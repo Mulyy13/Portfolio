@@ -1,4 +1,4 @@
-import sass from "../../../../assets/svgs/redux.svg";
+import sass from "../../../../assets/svgs/sass.svg";
 
 const Sass = () => {
   return (

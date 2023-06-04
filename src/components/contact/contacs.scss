@@ -23,6 +23,7 @@
     padding: 0px 0 50px;
     font-size: 40px;
     font-family: $fontB;
+    text-transform: uppercase;
   }
 
   &__wrapper {
@@ -39,40 +40,30 @@
       border-radius: 15px;
     }
 
-    .contact__email {
-      width: 100px;
-      font-size: $iconsSize;
-      transition: 1s;
-
-      &:hover {
-        width: 200px;
-
-        font-size: 16px;
-        transition: width 1.5s, font-size 0s 0.9s;
-        font-family: $fontD;
-      }
-    }
     .contact__git {
-      color: red;
       font-size: $iconsSize;
 
       &-icon {
+        color: rgb(226, 60, 0);
         transform: scale(1);
         transition: 1s;
         &:hover {
-          transform: scale(1.6);
+          transform: scale(1.3);
           transition: 1s;
         }
       }
     }
     .contact__linkedIn {
-      color: rgb(70, 95, 236);
       font-size: $iconsSize;
+      text-align: center;
       &-icon {
+        color: rgb(70, 95, 236);
         transform: scale(1);
         transition: 1s;
+        height: 36px;
+
         &:hover {
-          transform: scale(1.6);
+          transform: scale(1.1);
           transition: 1s;
         }
       }
@@ -81,6 +72,19 @@
       width: 100px;
       font-size: $iconsSize;
       transition: 1s;
+      transition-delay: 0.2s;
+      &:hover {
+        width: 200px;
+        font-size: 16px;
+        transition: width 1.5s, font-size 0s 0.9s;
+        font-family: $fontD;
+      }
+    }
+    .contact__email {
+      width: 100px;
+      font-size: $iconsSize;
+      transition: 1s;
+      transition-delay: 0.2s;
       &:hover {
         width: 200px;
         font-size: 16px;

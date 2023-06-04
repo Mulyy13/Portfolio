@@ -2,26 +2,37 @@ import { useState } from "react";
 import "./contacs.scss";
 import { BsGithub, BsTelephoneFill, BsLinkedin } from "react-icons/bs";
 import { GrMail } from "react-icons/gr";
-
+import { Link } from "react-router-dom";
 const Contact = () => {
   const [telephoneNumber, setTelephoneNumber] = useState(<BsTelephoneFill />);
   const [email, setEmail] = useState(<GrMail />);
+  const [timeoutId, setTimeoutId] = useState(null);
 
   const handleMouseEnterMail = () => {
-    setTimeout(() => {
+    const id = setTimeout(() => {
       setEmail("mularz.michal98@gmail.com");
     }, 900);
+    setTimeoutId(id);
   };
+
   const handleMouseLeaveMail = () => {
     setEmail(<GrMail />);
+    if (timeoutId) {
+      clearTimeout(timeoutId);
+    }
   };
+
   const handleMouseEnterTel = () => {
-    setTimeout(() => {
+    const id = setTimeout(() => {
       setTelephoneNumber("+48 515 626 510");
     }, 900);
+    setTimeoutId(id);
   };
   const handleMouseLeaveTel = () => {
     setTelephoneNumber(<BsTelephoneFill />);
+    if (timeoutId) {
+      clearTimeout(timeoutId);
+    }
   };
   return (
     <section className="contact">
@@ -30,7 +41,14 @@ const Contact = () => {
       <div className="contact__wrapper">
         {" "}
         <div className=" contact__item contact__git">
-          <BsGithub className="contact__git-icon" />
+          <a
+            className="contact__git-icon"
+            target="_blank"
+            rel="noopener noreferrer"
+            href="https://github.com/Mulyy13"
+          >
+            <BsGithub />
+          </a>
         </div>{" "}
         <div
           className="contact__item contact__email"
@@ -40,7 +58,14 @@ const Contact = () => {
           {email}
         </div>
         <div className="contact__item contact__linkedIn">
-          <BsLinkedin className="contact__linkedIn-icon" />
+          <Link
+            className="contact__git-icon"
+            target="_blank"
+            rel="noopener noreferrer"
+            href="https://github.com/Mulyy13"
+          >
+            <BsLinkedin className="contact__linkedIn-icon" />
+          </Link>
         </div>
         <div
           className="contact__item contact__phone"

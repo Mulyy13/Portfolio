@@ -43,8 +43,7 @@ body {
   animation: moveUpDown 0.4s linear infinite;
 }
 .message-opened {
-  transition: 1s;
-  font-size: 0px;
+  display: none;
 }
 @media (max-width: 720px) {
   body {

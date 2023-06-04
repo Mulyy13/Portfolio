@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import "./message.scss";
-import { FaSmileBeam } from "react-icons/fa";
+
+import { Link } from "react-router-dom";
 
 const Message = () => {
   const [text, setText] = useState("");
@@ -21,14 +22,13 @@ const Message = () => {
   }, [originalText, num]);
 
   return (
-    <div className="container">
-      <h1>Witam!</h1>
+    <div className="letter">
+      <h1 className="letter__greetings">Witam!</h1>
       <br />
-      <p>
-        {text}
-        {num === originalText.length - 1 ? <FaSmileBeam /> : null}
-      </p>
-      <span>przejdź dalej</span>
+      <p className="letter__text">{text}</p>
+      <Link className="letter__link" to={"/Skills"}>
+        Przejdź dalej
+      </Link>
     </div>
   );
 };

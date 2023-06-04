@@ -107,15 +107,18 @@
       }
     }
   }
-  .skills__projects-navigator {
+  .skills__projects {
     text-align: center;
     font-family: $fontD;
     font-size: 20px;
     color: white;
-    span {
+    &-link {
       color: rgb(127, 230, 127);
-      text-decoration: underline;
+      text-decoration: none;
       cursor: pointer;
+      &:hover {
+        text-decoration: underline;
+      }
     }
   }
 }

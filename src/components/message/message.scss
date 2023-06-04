@@ -1,6 +1,6 @@
 @import "../../fonts/fonts.scss";
-.container {
-  h1 {
+.letter {
+  &__greetings {
     position: absolute;
     top: 30%;
     left: 45.5%;
@@ -8,25 +8,65 @@
     font-size: 76px;
     font-family: $fontB;
   }
-  p {
+  &__text {
     font-family: $fontD;
     position: absolute;
     top: 50%;
-    left: 35%;
+    left: 41.2%;
     font-size: 20px;
     width: 24%;
   }
-  span {
+  &__link {
     position: absolute;
     top: 75%;
-    right: 33%;
+    right: 30%;
     padding: 3px 10px;
     cursor: pointer;
+    font-size: 20px;
     font-family: $fontB;
+    text-decoration: none;
+    color: rgb(3, 170, 3);
+    border-radius: 25px;
+    border: 2px solid rgb(79, 201, 79);
     &:hover {
       background-color: rgb(79, 201, 79);
       color: white;
-      border-radius: 25px;
     }
   }
+}
+
+@media (max-width: 1180px) {
+  .letter {
+    &__greetings {
+      font-size: calc(76px * 0.8);
+    }
+    &__text {
+      font-size: calc(22px * 0.8);
+      width: 24%;
+    }
+    &__link {
+      position: absolute;
+      top: 75%;
+      right: 30%;
+      padding: 3px 10px;
+      cursor: pointer;
+      font-size: calc(22px * 0.8);
+
+      &:hover {
+        background-color: rgb(79, 201, 79);
+        color: white;
+      }
+    }
+  }
+}
+
+@media (max-width: 922px) {
+}
+
+@media (max-width: 720px) {
+}
+@media (max-width: 580px) {
+}
+
+@media (max-width: 462px) {
 }

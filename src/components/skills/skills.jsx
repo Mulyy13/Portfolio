@@ -9,7 +9,7 @@ import Git from "./skillsComponents/git/git";
 import Sass from "./skillsComponents/sass/sass";
 import Rwd from "./skillsComponents/rwd/rwd";
 import Vsc from "./skillsComponents/vsc/vsc";
-// import { projects } from "../../features/handleSection";
+import { Link } from "react-router-dom";
 
 const Skills = () => {
   return (
@@ -28,8 +28,12 @@ const Skills = () => {
           <Vsc />
           <Rwd />
         </div>
-        <p className="skills__projects-navigator">
-          Sprawdź <span>projekty</span> w których je wykorzystywałem
+        <p className="skills__projects">
+          Sprawdź{" "}
+          <Link className="skills__projects-link" to={"/Projects"}>
+            projekty
+          </Link>{" "}
+          w których je wykorzystywałem
         </p>
       </div>
     </section>

@@ -25,10 +25,14 @@
     font-size: 19px;
     font-weight: 600;
     font-family: $fontE;
-    span {
+    &-link {
       color: green;
-      text-decoration: underline;
+      text-decoration: none;
+      letter-spacing: 2px;
       cursor: pointer;
+      &:hover {
+        text-decoration: underline;
+      }
     }
   }
 }
