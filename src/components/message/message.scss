@@ -3,7 +3,7 @@
   &__greetings {
     position: absolute;
     top: 30%;
-    left: 45.5%;
+    left: 44.5%;
     color: rgb(3, 170, 3);
     font-size: 76px;
     font-family: $fontB;
@@ -45,10 +45,6 @@
       width: 24%;
     }
     &__link {
-      position: absolute;
-      top: 75%;
-      right: 30%;
-      padding: 3px 10px;
       cursor: pointer;
       font-size: calc(22px * 0.8);
 
@@ -61,12 +57,62 @@
 }
 
 @media (max-width: 922px) {
+  .letter {
+    &__greetings {
+      font-size: calc(76px * 0.75);
+    }
+    &__text {
+      font-size: calc(22px * 0.75);
+    }
+    &__link {
+      font-size: calc(22px * 0.75);
+    }
+  }
 }
 
 @media (max-width: 720px) {
+  .letter {
+    &__greetings {
+      left: 38%;
+      font-size: calc(76px * 0.7);
+    }
+    &__text {
+      left: 32%;
+      font-size: calc(22px * 0.7);
+      width: 40%;
+    }
+    &__link {
+      top: auto;
+      bottom: 15%;
+      right: 15%;
+      font-size: calc(22px * 0.7);
+    }
+  }
 }
 @media (max-width: 580px) {
+  .letter {
+    &__greetings {
+      font-size: calc(76px * 0.6);
+    }
+    &__text {
+      font-size: calc(22px * 0.6);
+    }
+    &__link {
+      font-size: calc(22px * 0.6);
+    }
+  }
 }
 
 @media (max-width: 462px) {
+  .letter {
+    &__greetings {
+      font-size: calc(76px * 0.55);
+    }
+    &__text {
+      font-size: calc(22px * 0.55);
+    }
+    &__link {
+      font-size: calc(22px * 0.55);
+    }
+  }
 }

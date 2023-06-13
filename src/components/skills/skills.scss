@@ -34,8 +34,8 @@
     padding: 0 10px;
     width: 90%;
     .skills__item {
-      width: 100px;
-      height: 100px;
+      width: 80px;
+      height: 80px;
       color: white;
       border-radius: 25px;
       &-html {
@@ -70,8 +70,16 @@
         background-color: #f06292;
         border: 1.5px solid #ec6494;
       }
+      &-firebase {
+        background-color: #ffa000;
+        border: 1.5px solid #fc7004;
+      }
       &-vsc {
         background-color: #29b6f6;
+        border: 1.5px solid #0288d1;
+      }
+      &-typescript {
+        background-color: #145795;
         border: 1.5px solid #0288d1;
       }
       &-rwd {
@@ -104,6 +112,8 @@
       }
       &-name {
         text-align: center;
+        font-size: 10px;
+        font-family: $fontD;
       }
     }
   }
@@ -151,35 +161,6 @@
   }
 }
 
-@media (max-width: 1180px) {
-  .skills__container {
-    position: absolute;
-    top: 23.5%;
-    left: 27.3%;
-    width: 47.6%;
-    height: 64.2%;
-    .skills__title {
-      padding: 40px 0 20px;
-      font-size: calc(40px * 0.9);
-    }
-
-    .skills__items {
-      padding-top: 10px;
-      gap: 2%;
-
-      .skills__item {
-        width: 70px;
-        height: 70px;
-        &-name {
-          text-align: center;
-          padding-top: 2%;
-          font-size: 10px;
-        }
-      }
-    }
-  }
-}
-
 @media (max-width: 922px) {
   .skills__container {
     .skills__title {
@@ -197,9 +178,6 @@
           font-size: 8px;
         }
       }
-    }
-    .skills__projects-navigator {
-      font-size: calc(20px * 0.8);
     }
   }
 }
@@ -224,8 +202,12 @@
         height: 60px;
       }
     }
+    .skills__projects {
+      font-size: calc(20px * 0.9);
+    }
   }
 }
+
 @media (max-width: 580px) {
   .skills__container {
     .skills__title {
@@ -234,12 +216,12 @@
 
     .skills__items {
       .skills__item {
-        width: 60px;
-        height: 60px;
+        width: 55px;
+        height: 55px;
       }
     }
-    .skills__projects-navigator {
-      font-size: calc(20px * 0.7);
+    .skills__projects {
+      font-size: calc(20px * 0.8);
     }
   }
 }
@@ -248,7 +230,6 @@
   .skills__container {
     .skills__title {
       padding: 20px 0 10px;
-      font-size: calc(40px * 0.7);
     }
 
     .skills__items {
@@ -263,8 +244,8 @@
         }
       }
     }
-    .skills__projects-navigator {
-      font-size: calc(20px * 0.7);
+    .skills__projects {
+      font-size: calc(20px * 0.8);
     }
   }
 }

@@ -10,6 +10,8 @@ import Sass from "./skillsComponents/sass/sass";
 import Rwd from "./skillsComponents/rwd/rwd";
 import Vsc from "./skillsComponents/vsc/vsc";
 import { Link } from "react-router-dom";
+import Typescript from "./skillsComponents/typescript/typescript";
+import Firebase from "./skillsComponents/firebase/firebase";
 
 const Skills = () => {
   return (
@@ -21,11 +23,13 @@ const Skills = () => {
           <Css />
           <Js />
           <React />
+          <Typescript />
           <Redux />
           <Eslint />
           <Git />
           <Sass />
           <Vsc />
+          <Firebase />
           <Rwd />
         </div>
         <p className="skills__projects">

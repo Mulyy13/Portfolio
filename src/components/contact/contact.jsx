@@ -2,7 +2,7 @@ import { useState } from "react";
 import "./contacs.scss";
 import { BsGithub, BsTelephoneFill, BsLinkedin } from "react-icons/bs";
 import { GrMail } from "react-icons/gr";
-import { Link } from "react-router-dom";
+
 const Contact = () => {
   const [telephoneNumber, setTelephoneNumber] = useState(<BsTelephoneFill />);
   const [email, setEmail] = useState(<GrMail />);
@@ -58,14 +58,14 @@ const Contact = () => {
           {email}
         </div>
         <div className="contact__item contact__linkedIn">
-          <Link
-            className="contact__git-icon"
+          <a
+            href="https://www.linkedin.com/in/micha%C5%82-mularz-950165279/"
+            className="contact__linkedin-icon"
             target="_blank"
             rel="noopener noreferrer"
-            href="https://github.com/Mulyy13"
           >
             <BsLinkedin className="contact__linkedIn-icon" />
-          </Link>
+          </a>
         </div>
         <div
           className="contact__item contact__phone"

@@ -43,25 +43,11 @@ export const myProjects = [
     urlApp: "https://mulyy13.github.io/piano/",
     urlGit: "https://github.com/Mulyy13/piano",
     name: "Piano",
-    imageURL: process.env.PUBLIC_URL + "/images/Piano1.png",
+    imageURL: process.env.PUBLIC_URL + "/images/Piano.png",
     description: "Mini piano do gry na klawiaturze",
     tech: (
       <>
         <Html /> <Css /> <Js />
-      </>
-    ),
-    showParagraph: false,
-  },
-  {
-    id: 3,
-    urlApp: "https://mulyy13.github.io/Memories/",
-    urlGit: "https://github.com/Mulyy13/ToDoApp",
-    name: "To Do App",
-    imageURL: process.env.PUBLIC_URL + "/images/Memories1.png",
-    description: "Lista rzeczy do zrobienia",
-    tech: (
-      <>
-        <Html /> <Sass /> <Js /> <React />
       </>
     ),
     showParagraph: false,
